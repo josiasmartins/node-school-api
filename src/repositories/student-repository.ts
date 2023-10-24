@@ -13,8 +13,6 @@ const itensRepository = {
             student.numero_da_sala
         ];
 
-        console.log(sql, "sql")
-
         database.run(sql, params, function(_err) {
             callback(this?.lastID)
         })

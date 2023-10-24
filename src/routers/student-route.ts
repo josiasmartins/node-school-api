@@ -12,6 +12,7 @@ studentRouter.post('/students', (req, res) => {
         if (id) {
             res.status(201).location(`/students/${id}`).send()
         } else {
+            console.log("post", req.body, res)
             res.status(400).send()
         }
     })

@@ -10,8 +10,8 @@ const SQL_STUDENT_CREATE = `
         nota_primeiro_semestre TEXT,
         nota_segundo_semestre TEXT,
         nome_professor TEXT,
-        numero_da_sala INTEGER,
-    )`;
+        numero_da_sala INTEGER
+    )`
 const database = new sqlite3.Database(DBSOURCE, (err) => {
     if (err) {
         console.error(err.message)

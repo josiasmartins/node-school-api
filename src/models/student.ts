@@ -7,4 +7,4 @@ type Student = {
     nome_professor: string,
     numero_da_sala: number,
 }
-export default Student
+export default Student;
